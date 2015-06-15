@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//gen/android/project/hospital/R.java=UTF-8
+encoding//src/android/project/hospital/AppointmentFragment.java=UTF-8
+encoding//src/android/project/hospital/DoctorFragment.java=UTF-8
+encoding//src/android/project/hospital/MainActivity.java=UTF-8
+encoding//src/android/project/hospital/PrescriptionFragment.java=UTF-8
+encoding//src/android/project/hospital/ProfileFragment.java=UTF-8
+encoding//src/android/project/hospital/adapter/PrescriptionAdapter.java=UTF-8
+encoding//src/android/project/hospital/model/SessionManager.java=UTF-8
+encoding//src/android/project/hospital/model/WebService.java=UTF-8

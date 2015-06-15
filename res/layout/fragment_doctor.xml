@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ProgressBar
+        android:id="@+id/activity_bar"
+        style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp" />
+
+    <TextView
+        android:id="@+id/tvChuyenMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="20dip"
+        android:text="@string/specialize"
+        android:textColor="#0092ff" />
+
+    <Spinner
+        android:id="@+id/spChuyenMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvChuyenMon"
+        android:layout_margin="4dp"
+        android:background="@drawable/edittext_default_bg"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/tvDsBacSi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spChuyenMon"
+        android:layout_margin="4dp"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/listDoctor"
+        android:textColor="#0092ff" />
+
+    <ListView
+        android:id="@+id/lvDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDsBacSi"
+        android:textColor="#040404" >
+    </ListView>
+
+</RelativeLayout>

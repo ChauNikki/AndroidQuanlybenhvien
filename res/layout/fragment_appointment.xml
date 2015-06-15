@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginTop="4dip"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FF0000"
+            android:textSize="20sp" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvDateAppointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/DateAppointment"
+                    android:textColor="#0092ff" />
+
+                <EditText
+                    android:id="@+id/txtDateAppointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/edittext_default_bg"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:labelFor="@+id/txtDateAppointment"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvShift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/Shift"
+                    android:textColor="#0092ff" />
+
+                <Spinner
+                    android:id="@+id/spShift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/edittext_default_bg"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvSymptom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/Symptom"
+                    android:textColor="#0092ff" />
+
+                <EditText
+                    android:id="@+id/txtSymptom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/edittext_default_bg"
+                    android:hint=""
+                    android:lines="3"
+                    android:minLines="2"
+                    android:padding="10dp"
+                    android:textColorHint="#bbbbbb" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvRemind"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/Remind"
+                    android:textColor="#0092ff" />
+
+                <CheckBox
+                    android:id="@+id/chkRemind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/DefaultButtonText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_default_bg"
+                android:text="@string/Appointment" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                style="@style/DefaultButtonText"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_default_bg"
+                android:text="@string/Deytroy" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

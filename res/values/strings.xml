@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hospital app</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Appointment -->
+    <string name="DateAppointment">Ngày </string>
+    <string name="InfAppointment">Thông tin đăng ký</string>
+    <string name="Symptom">Triệu chứng</string>
+    <string name="Remind">Nhắc nhở</string>
+    <string name="Shift">Ca</string>
+    <string name="Appointment">Đăng ký</string>
+    <string name="Deytroy">Hủy</string>
+    <!-- Doctor -->
+    <string name="specialize">Chuyên Môn</string>
+    <string name="listDoctor">Danh sách bác si</string>
+    <!-- Update - profile -->
+    <string name="Birthday">Ngày sinh</string>
+    <string name="Fullname">Họ và tên</string>
+    <string name="Sex">Giới tính</string>
+    <string name="Phonenumber">Số điện thoại</string>
+    <string name="bhyt">Số thẻ bảo hiểm y tế</string>
+    <string name="Address">Địa chỉ</string>
+    <string name="ChangeProfile">Cập nhật</string>
+    <string name="register">Đăng ký</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Trang chính</item>
+        <item>Danh sách bác sĩ</item>
+        <item>Đơn thuốc của bạn</item>
+        <item>Đăng ký khám</item>
+        <item>Tài khoản</item>
+        <item>Giới thiệu</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_doctor</item>
+        <item>@drawable/ic_prescription</item>
+        <item>@drawable/ic_appointment</item>
+        <item>@drawable/ic_account</item>
+        <item>@drawable/ic_about</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <style name="DefaultButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#8cceff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+     
+    </style>
+    <!-- Đăng ký- Đăng nhập -->
+    <string name="sign_up">Đăng ký</string>
+    <string name="back">Back</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="user">Tài khoản</string>
+    <string name="title_activity_prescription">Prescription</string>
+    <string name="singup_tv">Tạo tài khoản mới</string>
+    <string name="logout">Đăng xuất</string>
+
+</resources>

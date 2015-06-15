@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvFullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dip"
+            android:text="@string/Fullname"
+            android:textColor="#0092ff" />
+
+        <EditText
+            android:id="@+id/txtFullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvFullname"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/edittext_default_bg"
+            android:ems="15"
+            android:hint=""
+            android:padding="10dp" />
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFullname"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvBirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/Birthday"
+                    android:textColor="#0092ff" />
+
+                <TextView
+                    android:id="@+id/tvSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:text="@string/Sex"
+                    android:textColor="#0092ff" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/txtBirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/edittext_default_bg"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:labelFor="@+id/txtBirthday"
+                    android:padding="10dp" />
+
+                <Spinner
+                    android:id="@+id/spSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/edittext_default_bg"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:padding="12dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/tvPhonenumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dip"
+            android:text="@string/Phonenumber"
+            android:textColor="#0092ff" />
+
+        <EditText
+            android:id="@+id/txtPhonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPhonenumber"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/edittext_default_bg"
+            android:ems="15"
+            android:inputType="number"
+            android:labelFor="@+id/txtPhonenumber"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPhonenumber"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dip"
+            android:text="@string/Address"
+            android:textColor="#0092ff" />
+
+        <EditText
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAddress"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/edittext_default_bg"
+            android:ems="15"
+            android:hint=""
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAddress"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnChangeProfile"
+                style="@style/DefaultButtonText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_default_bg"
+                android:text="@string/ChangeProfile" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                style="@style/DefaultButtonText"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_default_bg"
+                android:text="@string/logout" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
